@@ -1088,7 +1088,7 @@ def diagnostics_page(language):
         
         st.markdown("""
         <div class="formula-box">
-        <h5>📚 Variance Inflation Factor (VIF)</h5>
+        <h5 class="red-text">📚 Variance Inflation Factor (VIF)</h5>
         """, unsafe_allow_html=True)
         
         st.latex(r"VIF_j = \frac{1}{1-R_j^2}")
@@ -3002,4 +3002,5 @@ def main():
     elif selected_page == "Model Diagnostics":
         diagnostics_page(language)
     # ... other pages remain the same
+
 
