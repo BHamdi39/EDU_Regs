@@ -1,0 +1,11 @@
+streamlit==1.29.0
+pandas==2.1.4
+numpy==1.25.2
+matplotlib==3.8.2
+seaborn==0.13.0
+plotly==5.17.0
+statsmodels==0.14.1
+scipy==1.11.4
+reportlab==4.0.8
+xlsxwriter==3.1.9
+openpyxl==3.1.2
