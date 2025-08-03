@@ -5950,7 +5950,7 @@ def display_mathematical_theory():
         np.random.seed(42)
         true_intercept = st.slider("True Intercept (β₀):", 0.0, 5.0, 2.0, 0.1)
         true_slope = st.slider("True Slope (β₁):", 0.5, 3.0, 1.5, 0.1)
-        noise_level = st.slider("Noise Level:", 0.1, 2.0, 1.0, 0.1)
+        noise_level = st.slider("Noise Level:", 0.1, 2.0, 1.0, 0.1, key="noise_rd_demo")
         
         x = np.linspace(0, 10, 50)
         y = true_intercept + true_slope * x + np.random.normal(0, noise_level, 50)
@@ -7414,7 +7414,7 @@ def display_interpretation_guide():
         st.markdown("#### 🎮 Interactive R-squared Demo:")
         
         true_relationship = st.slider("Strength of True Relationship:", 0.0, 2.0, 1.0, 0.1)
-        noise_level_r2 = st.slider("Noise Level:", 0.1, 3.0, 1.0, 0.1)
+        noise_level_r2 = st.slider("Noise Level:", 0.1, 3.0, 1.0, 0.1, key="noise_theory_demo")
         
         np.random.seed(42)
         x_r2 = np.random.normal(0, 1, 100)
@@ -9025,4 +9025,5 @@ if __name__ == "__main__":
             """, 
             unsafe_allow_html=True
         )
+
 
